@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 *, *::before, *::after {
@@ -17,7 +17,7 @@ body {
   width: 100%;
 }
 
-.banner-body {
+.banner-circle {
   position: absolute;
   overflow: hidden;
   transform: translateX(-50%);
@@ -26,30 +26,41 @@ body {
   top: 25%;
 }
 
+.banner-body {
+  float: right;
+  width: 50%;
+  position: absolute;
+  padding: 0 1rem;
+  bottom: 1rem;
+}
+
 .small-circle {
   float: left;
   width: 50%;
 }
 
 .banner {
-  max-height: 500px
+  max-height: 500px;
   position: relative;
   width: 100%;
 }
 
-.btn-big {
+.btn {
   border-radius: 8px;
   text-decoration: none;
   padding: 0.4em 0.75em 0.3em;
   display: inline-block;
   margin: 0.5em 2em;
   font-size: 0.875rem;
-  border: solid 3px;
+  border: solid 3px #333;
+}
+
+.btn-big {
   background-color: #333;
   color: #fff;
 }
 
-.btn-big:hover {
+.btn:hover {
   background-color: #000;
 }
 
